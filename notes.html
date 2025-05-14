@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Notes - CS E-Learning</title>
+  <link rel="stylesheet" href="notes.css">
+</head>
+<body>
+  <!-- Check Login Status -->
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'index.html'; // Redirect to login page
+        }
+    </script>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">CS<span>Learn</span></div>
+      <nav class="nav">
+        <a href="home.html">Home</a>
+        <a href="course.html">Courses</a>
+        <a href="notes.html" class="active">Notes</a>
+        <a href="Certificates.html">Certificates</a>
+        <a href="contect.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Notes Section -->
+  <section class="notes">
+    <div class="container">
+      <h2>Download Notes</h2>
+      <p>Here you can find PDF notes for all topics.</p>
+
+      <div class="notes-list">
+
+        <div class="note-card">
+          <h3>Introduction to Computers</h3>
+          <a href="pdf/Ch.01_Introduction_ to_computers.pdf" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Programming Fundamentals</h3>
+          <a href="pdf/Programming-Fundamentals-1674091002.pdf" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Database Management</h3>
+          <a href="pdf/DBMS.pdf" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Web Development Basics</h3>
+          <a href="pdf/CSIT_(R22)_3-1_WEB APPLICATION DEVELOPMENT_DIGITAL NOTES.pdf" download>Download PDF</a>
+        </div>
+
+        <div class="note-card">
+          <h3>Networking Essentials</h3>
+          <a href="pdf/SMB_University_120307_Networking_Fundamentals.pdf" download>Download PDF</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CS Learn | Designed by Chirag</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chirag-chauhan-78a33319b" target="_blank">LinkedIn</a> 
+        <span>|</span>
+        <a href="https://github.com/chiragc7" target="_blank">GitHub</a>
+        <span>|</span>
+         <a href="https://chiragc7.github.io/portfolio/" target="_blank">portfolio</a> 
+         
+    
+      <p>📧  <a href="mailto:chiragchauhan10614@gmail.com" class="email-link">chiragchauhan10614@gmail.com</a> | 📞 +91-9105286928</p>
+    </div>
+  </footer>
+
+</body>
+</html>

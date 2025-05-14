@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Networking Essentials</title>
+  <link rel="stylesheet" href="networking.css" />
+</head>
+<body>
+  <!-- Check Login Status -->
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'index.html'; // Redirect to login page
+        }
+    </script>
+  <header>
+    <h1>Networking Essentials</h1>
+    <p>Learn the basics of computer networks and communication</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>What is Networking?</h2>
+      <p>
+        Networking refers to the practice of connecting computers and other devices together 
+        so they can share resources and information. It is the backbone of internet communication.
+      </p>
+    </section>
+
+    <section class="types">
+      <h2>Types of Networks</h2>
+      <ul>
+        <li><strong>LAN (Local Area Network):</strong> Covers a small area like home, office, or school.</li>
+        <li><strong>WAN (Wide Area Network):</strong> Covers large geographic areas, such as the internet.</li>
+        <li><strong>MAN (Metropolitan Area Network):</strong> Connects users in a city or large campus.</li>
+        <li><strong>Wireless Networks (Wi-Fi):</strong> Connects devices using radio signals instead of cables.</li>
+      </ul>
+    </section>
+
+<h2>LAN (Local Area Network)</h2>
+<p>A LAN connects computers and devices within a limited area, such as a home, office, school, or campus. 
+    It allows users to share resources like files, printers,
+     and internet connections easily and quickly.</p>
+
+<ul>
+<li>Covers a small geographic area</li>
+<li>High-speed connection (usually wired or Wi-Fi)</li>
+<li>Low setup and maintenance cost</li>
+<li>Typically owned and managed by a single person or organization</li>
+<li>Example: Computers connected in a school lab</li>
+
+</ul>
+
+<h2>2. WAN (Wide Area Network)</h2>
+<p>A WAN spans a large geographic area — like cities,
+     countries, or even continents. The internet is the largest WAN in existence. 
+     WANs are used to connect smaller networks (like LANs)
+     to each other over long distances.</p>
+
+<ul>
+<li>Covers a wide area using leased telecom lines</li>
+<li>Lower speed than LANs (but improving with fiber optics)</li>
+<li>Higher cost to maintain</li>
+<li>Often managed by service providers (ISPs)</li>
+<li> Example: A multinational company connecting its global branches</li>
+
+</ul>
+
+
+<h2> 3. MAN (Metropolitan Area Network)</h2>
+<p>A MAN covers a city-sized area and is larger than 
+    a LAN but smaller than a WAN. It connects multiple LANs within a specific geographic area like
+     a university campus or a metropolitan city.</p>
+
+<ul>
+<li>Medium-range coverage (city-wide)</li>
+<li>High-speed connectivity</li>
+<li>Often maintained by government or large organizations</li>
+<li>Used to connect schools, colleges, or city offices</li>
+<li>Example: A city-wide Wi-Fi network for public access</li>
+</ul>
+
+
+<h2>4. Wireless Network (Wi-Fi)</h2>
+<p>Wireless networks use radio waves to transmit data instead of physical cables. 
+    Devices like smartphones, laptops, 
+    and tablets connect to wireless routers to access the internet.</p>
+
+<ul>
+<li>No need for physical cables</li>
+<li>Offers mobility and flexibility</li>
+<li>Slightly lower speed than wired connections</li>
+<li>Can be public (open Wi-Fi) or private (home network)</li>
+<li>Example: Wi-Fi at a coffee shop or home</li>
+
+</ul>
+
+
+    <section class="devices">
+      <h2>Common Networking Devices</h2>
+      <ul>
+        <li><strong>Router:</strong> Connects different networks together and manages traffic.</li>
+        <li><strong>Switch:</strong> Connects multiple devices within a LAN.</li>
+        <li><strong>Modem:</strong> Connects your home network to your Internet Service Provider (ISP).</li>
+        <li><strong>Access Point:</strong> Provides wireless connectivity to wired networks.</li>
+      </ul>
+    </section>
+
+<h2>1. Router</h2>
+<p>A router is a device that connects different networks
+     together — such as your home network to the internet. It routes (or directs) data packets between networks and assigns 
+    local IP addresses to devices on your network.</p>
+
+<ul>
+
+<li>Connects LAN to the internet</li>
+<li>Manages data traffic between networks</li>
+<li>Often includes built-in firewall and wireless capabilities</li>
+<li>Supports multiple devices</li>
+<li>Example: The router at home that lets phones, TVs, and laptops access the internet.</li>
+</ul>
+
+<h2>2. Switch</h2>
+<p>A switch is used within a Local Area Network (LAN) to connect multiple devices such as
+     computers, printers, and servers. It sends data only to the device it’s intended for,
+     making the network efficient and secure.</p>
+<ul>
+<li>Works at the data link layer (Layer 2)</li>
+<li>Transfers data to specific devices using MAC addresses</li>
+<li>Increases LAN performance and reduces collisions</li>
+<li>Can be unmanaged (plug & play) or managed (configurable)</li>
+<li>Example: Office switch that connects 10 computers to one internal network</li>
+
+</ul>
+
+
+<h2>3. Modem</h2>
+<p>A modem (modulator-demodulator) is a device that converts digital data 
+    from a computer to analog signals for transmission over phone lines, and vice versa.
+     It is essential for connecting to the 
+    internet via an ISP (Internet Service Provider).</p>
+
+<ul>
+    <li>Converts digital data to analog and back</li>
+    <li>Acts as a bridge between home/office network and ISP</li>
+    <li>Required for DSL or cable internet connections</li>
+    <li>Example: The box provided by your ISP to get internet access at home.    </li>
+
+
+</ul>
+
+<h2>4. Access Point (AP)</h2>
+<p>An Access Point is a device that extends the range of a wired network by 
+    adding wireless capability. It connects to a switch or router and allows 
+    Wi-Fi-enabled devices to connect to the network wirelessly.</p>
+
+<ul>
+<li>Extends Wi-Fi coverage</li>
+<li>Connects wireless devices to the wired network</li>
+<li>Often used in large offices, schools, and public places</li>
+<li>Example: Wi-Fi extenders or mesh network points used in large homes or campuses.</li>
+
+</ul>
+
+
+    <section class="importance">
+      <h2>Why Learn Networking?</h2>
+      <p>
+        Understanding networking helps in troubleshooting internet problems, setting up secure systems, 
+        and is essential for careers in IT, cybersecurity, and cloud computing.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CS Learn | Designed by Chirag</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chirag-chauhan-78a33319b" target="_blank">LinkedIn</a> 
+        <span>|</span>
+        <a href="https://github.com/chiragc7" target="_blank">GitHub</a>
+        <span>|</span>
+         <a href="https://chiragc7.github.io/portfolio/" target="_blank">portfolio</a> 
+         
+    
+      <p>📧  <a href="mailto:chiragchauhan10614@gmail.com" class="email-link">chiragchauhan10614@gmail.com</a> | 📞 +91-9105286928</p>
+    </div>
+  </footer>
+
+</body>
+</html>

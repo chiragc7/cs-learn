@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Courses - CS E-Learning</title>
+  <link rel="stylesheet" href="course.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+
+</head>
+<body>
+  <!-- Check Login Status -->
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'index.html'; // Redirect to login page
+        }
+    </script>
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <div class="logo">CS<span>Learn</span></div>
+      <nav class="nav">
+        <a href="home.html">Home</a>
+        <a href="course.html" class="active">Courses</a>
+        <a href="notes.html">Notes</a>
+        <a href="Certificates.html">Certificates</a>
+        <a href="contect.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Courses Section -->
+  <section class="courses">
+    <div class="container">
+      <h2>Our Courses</h2>
+      <p>Start learning today with our Computer Science courses!</p>
+
+      <div class="course-grid">
+        <div class="course-card">
+          <h3>Introduction to Computers</h3>
+          <p>Learn the basics of computers, hardware, software, and applications.</p>
+          <a href="introduction.html">Start Learning</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Programming Fundamentals</h3>
+          <p>Understand algorithms, flowcharts, and basic programming logic.</p>
+          <a href="programing.html">Start Learning</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Database Management</h3>
+          <p>Learn about databases, SQL queries, and data storage techniques.</p>
+          <a href="database.html">Start Learning</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Web Development Basics</h3>
+          <p>Introduction to HTML, CSS, and JavaScript for website development.</p>
+          <a href="https://chiragc7.github.io/studyc7/">Start Learning</a>
+        </div>
+
+        <div class="course-card">
+          <h3>Networking Essentials</h3>
+          <p>Understand computer networks, internet basics, and cybersecurity.</p>
+          <a href="network.html">Start Learning</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CS Learn | Designed by Chirag</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chirag-chauhan-78a33319b" target="_blank">LinkedIn</a> 
+        <span>|</span>
+        <a href="https://github.com/chiragc7" target="_blank">GitHub</a>
+        <span>|</span>
+         <a href="https://chiragc7.github.io/portfolio/" target="_blank">portfolio</a> 
+         
+    
+      <p>📧  <a href="mailto:chiragchauhan10614@gmail.com" class="email-link">chiragchauhan10614@gmail.com</a> | 📞 +91-9105286928</p>
+    </div>
+  </footer>
+
+</body>
+</html>

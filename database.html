@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Introduction to Database</title>
+  <link rel="stylesheet" href="database.css" />
+</head>
+<body>
+  <!-- Check Login Status -->
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'index.html'; // Redirect to login page
+        }
+    </script>
+  <header>
+    <h1>Introduction to Database</h1>
+    <p>Understanding the basics of storing and managing data</p>
+  </header>
+
+  <main class="container">
+    <section class="intro">
+      <h2>What is a Database?</h2>
+      <p>
+        A database is an organized collection of data that can be easily accessed, managed, and updated. 
+        It helps in storing large amounts of data efficiently so that it can be retrieved and used whenever needed.
+      </p>
+    </section>
+
+    <section class="types">
+      <h2>Types of Databases</h2>
+      <ul>
+        <li>Relational Database (e.g., MySQL, PostgreSQL)</li>
+        <li>NoSQL Database (e.g., MongoDB)</li>
+        <li>Cloud Database (e.g., Firebase)</li>
+        <li>Distributed Database</li>
+      </ul>
+    </section>
+
+<h2>1. Relational Database (e.g., MySQL, PostgreSQL)</h2>
+<p>A Relational Database stores data in tables (rows and columns) and uses Structured Query Language (SQL) to manage and retrieve it.
+    Each table has a primary key and can be linked to other tables using foreign keys, which makes data organized and easy to relate.</p>
+<ul>
+<li>Structured format with defined schema</li>
+<li>Supports complex queries using SQL</li>
+<li>Ensures data integrity using constraints and relationships</li>
+<li>Used in: Banking systems, e-commerce, CRM software</li>
+</ul>
+
+<h2> 2. NoSQL Database (e.g., MongoDB)</h2>
+<p>A NoSQL Database is used to store unstructured or semi-structured data. It doesn't require a fixed schema, making it highly flexible for modern 
+    applications like real-time analytics and content management systems.</p>
+<ul>
+<li>Stores data in formats like JSON, documents, key-value pairs</li>
+<li>High scalability and performance</li>
+<li>Schema-less (can change structure anytime)</li>
+<li>Used in: Social media apps, IoT, real-time analytics</li>
+</ul>
+
+<h2> 3. Cloud Database (e.g., Firebase)</h2>
+<p>A Cloud Database is hosted on the cloud rather than on local servers. It allows access to data anytime,
+     anywhere through the internet, and is often fully managed by service providers</p>
+
+<ul>
+    <li>Accessible globally via internet</li>
+    <li>Auto-scaling and real-time syncing</li>
+    <li>No need for server management</li>
+    <li>Used in: Mobile apps, real-time chat apps, SaaS platforms</li>
+</ul>
+
+<h2>4. Distributed Database</h2>
+<p>
+    A Distributed Database stores data across multiple physical locations
+     (different servers or even countries).
+     It appears as a single database to users but is actually split across a network.
+</p>
+
+<ul>
+
+    <li>High availability and fault tolerance</li>
+    <li>Data is stored closer to the users for faster access</li>
+    <li>Used in large-scale systems</li>
+    <li>Used in: Telecom systems, global applications, big data environments</li>
+
+
+</ul>
+
+
+
+    <section class="uses">
+      <h2>Common Uses of Databases</h2>
+      <p>
+        Databases are used in almost every field – banking, education, e-commerce, social media, healthcare, and more.
+      </p>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 CS Learn | Designed by Chirag</p>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/chirag-chauhan-78a33319b" target="_blank">LinkedIn</a> 
+        <span>|</span>
+        <a href="https://github.com/chiragc7" target="_blank">GitHub</a>
+        <span>|</span>
+         <a href="https://chiragc7.github.io/portfolio/" target="_blank">portfolio</a> 
+         
+    
+      <p>📧  <a href="mailto:chiragchauhan10614@gmail.com" class="email-link">chiragchauhan10614@gmail.com</a> | 📞 +91-9105286928</p>
+    </div>
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CS E-Learning Platform</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Check Login Status -->
+    <script>
+        // Check if user is logged in
+        if (!localStorage.getItem('loggedIn')) {
+            window.location.href = 'index.html'; // Redirect to login page
+        }
+    </script>
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">CS<span>Learn</span></div>
+            <nav class="nav">
+                <a href="home.html">Home</a>
+                <a href="course.html">Courses</a>
+                <a href="notes.html">Notes</a>
+                <a href="Certificates.html">Certificates</a>
+                <a href="contect.html">Contact</a>
+                <!-- Logout Button -->
+                <a href="#" onclick="handleLogout()" class="btn btn-outline-danger btn-sm ms-2">Logout</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1>Learn Computer Science<br> Step-by-Step</h1>
+                <p>Structured Courses | Downloadable Notes | Certification | Online Tests</p>
+                <a href="course.html" class="btn-primary">Start Learning</a>
+            </div>
+            <div class="hero-image">
+                <img src="home_page_img.png.webp" alt="E-learning Image">
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features">
+        <div class="container features-grid">
+            <div class="feature-item">
+                <h3>Interactive Courses</h3>
+                <p>Learn from beginner to advanced level topics.</p>
+                <button type="button" class="btn btn-outline-info">
+                    <a href="course.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Explore Courses</a>
+                </button>
+            </div>
+            <div class="feature-item">
+                <h3>Download Notes</h3>
+                <p>Access PDF notes for quick revision anytime.</p>
+                <button type="button" class="btn btn-outline-info">
+                    <a href="notes.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Download Notes</a>
+                </button>
+            </div>
+            <div class="feature-item">
+                <h3>Get Certified</h3>
+                <p>Earn certificates after course and test completion.</p>
+                <button type="button" class="btn btn-outline-info">
+                    <a href="Certificates.html" class="link-danger link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">Get Certified</a>
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>© 2025 CS Learn | Designed by Chirag</p>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/chirag-chauhan-78a33319b" target="_blank">LinkedIn</a> 
+                <span>|</span>
+                <a href="https://github.com/chiragc7" target="_blank">GitHub</a>
+                <span>|</span>
+                <a href="https://chiragc7.github.io/portfolio/" target="_blank">Portfolio</a> 
+            </div>
+            <p>📧 <a href="mailto:chiragchauhan10614@gmail.com" class="email-link">chiragchauhan10614@gmail.com</a> | 📞 +91-9105286928</p>
+        </div>
+    </footer>
+
+    <!-- Logout Script -->
+    <script>
+        function handleLogout() {
+            // Clear login status
+            localStorage.removeItem('loggedIn');
+            localStorage.removeItem('currentUser');
+            alert('You have been logged out.');
+            window.location.href = 'index.html'; // Redirect to login page
+        }
+    </script>
+</body>
+</html>
