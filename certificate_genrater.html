@@ -5,6 +5,54 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificate Generator</title>
     <link rel="stylesheet" href="certificate_genrater.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        #certificateCanvas {
+            display: none;
+            border: 1px solid #ccc;
+            margin: 20px auto;
+        }
+        #downloadBtn {
+            padding: 10px 20px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            font-size: 16px;
+            margin-top: 20px;
+            cursor: not-allowed;
+            opacity: 0.5;
+        }
+        #downloadBtn.enabled {
+            cursor: pointer;
+            opacity: 1;
+        }
+        #timer {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+        form {
+            margin: 20px 0;
+        }
+        input[type="text"] {
+            padding: 8px;
+            font-size: 16px;
+        }
+        input[type="submit"] {
+            padding: 8px 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -17,7 +65,16 @@
 
         <canvas id="certificateCanvas" width="800" height="600"></canvas>
     </div>
-
+<div class="container">
+        <h1>“E-Learning Platform for Digital Education Access”</h1>
+        <p>Spend 5 minutes on this page to unlock your certificate!</p>
+        <div id="timer">Time spent: 0 seconds</div>
+        <form id="certificateForm">
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <input type="submit" value="Generate Certificate">
+        </form>
+        <canvas id="certificateCanvas" width="800" height="600"></canvas>
+</div>
     <script src="certificate_genrater.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
 
